@@ -6,31 +6,37 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Undoing Last Drawing Action
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: User wants to undo the last drawing action on the canvas.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The drawing application is open and the canvas is displayed. The user has performed at least one drawing action.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user presses a specified key combination (e.g., Ctrl + Z) to undo the last drawing action.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: 
+User launches the drawing application.
+The application opens a window with a 600x400-pixel canvas.
+User selects a drawing color using the number keys (1-8).
+User draws on the canvas.
+Realizing a mistake, the user presses the specified key combination (e.g., Ctrl + Z) to undo the last drawing action.
+The last drawing action is reversed, and the canvas reverts to its previous state.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the user attempts to undo when there are no previous drawing actions to undo, the application provides feedback that there is nothing to undo.
+If there are multiple levels of undo available, the user can continue pressing the undo key combination to step back through multiple drawing actions.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Medium
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Next software release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: Graphic User Interface
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
-
-**Open Issues**: *notes, concerns, or other materials*
+**Channels to Secondary Actors**: N/A
+**Open Issues**: Consider implementing a redo functionality to allow the user to reverse an undo action if needed.
 
 <hr>
 

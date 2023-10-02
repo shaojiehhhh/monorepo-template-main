@@ -6,31 +6,35 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Clearing the Canvas
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: User wants to clear the entire canvas to start a new drawing.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The drawing application is open and the canvas is displayed. The user has drawn something on the canvas.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user presses the space key.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**:
+User launches the drawing application.
+The application opens a window with a 600x400-pixel canvas.
+User draws on the canvas.
+To clear the canvas and start fresh, the user presses the space key.
+The entire canvas is filled with the last selected color, effectively clearing any previous drawings.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the canvas is already empty, pressing the space key has no effect.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Medium
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Next software release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: Graphic User Interface
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
-
-**Open Issues**: *notes, concerns, or other materials*
+**Channels to Secondary Actors**: N/A
+**Open Issues**: N/A
 
 <hr>
 

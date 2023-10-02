@@ -6,31 +6,37 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Adjusting Canvas Size
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: User wants to change the size of the canvas for drawing.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The drawing application is open. The user is in the drawing mode.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user performs an action to adjust the canvas size.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: 
+User launches the drawing application.
+The application opens a window with a default canvas size (e.g., 600x400 pixels).
+User decides to adjust the canvas size and accesses a menu or dialog for canvas settings.
+User specifies the desired width and height for the canvas.
+The application updates the canvas size accordingly.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: 
+If the user specifies invalid dimensions (e.g., negative values or non-numeric input), the application displays an error message and does not change the canvas size.
+If there are unsaved drawings on the canvas, the application may prompt the user to save or discard them before resizing.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Medium
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Next software release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: Graphic User Interface
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
+**Channels to Secondary Actors**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
-
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: Consider providing predefined canvas size options for user convenience, such as "Letter," "A4," or "Custom."
 
 <hr>
 

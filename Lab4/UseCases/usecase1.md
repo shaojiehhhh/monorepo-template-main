@@ -6,31 +6,43 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Selecting Drawing Color
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: User wants to select a color for drawing on the canvas.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The drawing application is open and the canvas is displayed. The user is in the drawing mode.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: The user presses one of the number keys (1-8) to select a drawing color.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: 
+User launches the drawing application.
+The application opens a window with a 600x400-pixel canvas.
+User presses one of the number keys (1-8) to choose a drawing color:
+1 = Black
+2 = White
+3 = Red
+4 = Green
+5 = Blue
+6 = Yellow
+7 = Magenta
+8 = Cyan
+The selected color is visually indicated to the user, such as highlighting the selected color or displaying the color code.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the user presses a key that is not in the range of 1-8, the application provides feedback and does not change the drawing color. If the application encounters an error in changing the color, it displays an error message to the user.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: Medium
 
-**When available**: *the targeted release that covers this use case*
+**When available**: Next software release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: Graphic User Interface
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: N/A
 
 <hr>
 
